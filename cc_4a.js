@@ -44,19 +44,18 @@ products.forEach(products => console.log (
 ));
 
 
-let customerType = ["regular", "student", "senior"]
-let customerDiscounts = 0;
+let customerType = ["regular", "student", "senior"];
 
-if (customerType = "regular") {
-    customerDiscounts = 0}
-    else if (customerType = "student") {
-        customerDiscounts = 0.05}
-    else if (customerType = "senior") {
-        customerDiscounts = 0.08}
+if (customerType === "regular") {
+    customerDiscounts = 0; }
+    else if (customerType === "student") {
+        customerDiscounts = 0.05; }
+    else if (customerType === "senior") {
+        customerDiscounts = 0.08; }
     else {
-        customerDiscounts = 0}
+        customerDiscounts = 0; }
 
-console.log(`------------------ Customer Benefits ------------`);
-customerType.forEach(customerType => console.log(
-    `${customerType} | ${customerDiscounts}`
-));
+
+console.log(`---------------- Test ---------------`)
+subtotal = 0;
+for (let cusCart of products){}
