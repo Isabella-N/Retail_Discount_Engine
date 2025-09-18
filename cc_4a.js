@@ -11,3 +11,23 @@ let products = [{
     name: "TV", category: "electronics", price: 90.00, inventort: 40
 }];
 
+for (let product of products) {
+    let discounts = 0;
+
+    switch (product.category) {
+        case "apparel":
+            discounts = 0.10
+            break;
+        case "kitchen":
+            discounts = 0.05
+            break;
+        case "electronics":
+            discounts = 0.20
+            break;
+        default:
+            discounts = 0;
+    }
+
+    let promoPrice = product.price * (product.price* discounts);
+    product.promoPrice = promoPrice.toFixed(2)
+}
