@@ -17,7 +17,7 @@ products.forEach(products => console.log (
     `${products.name} | ${products.category} | $${products.price} | ${products.inventory}`
 ));
 
-//
+//---------------------------------------------------
 for (let product of products) {
     let discounts = 0;
 
@@ -43,6 +43,7 @@ products.forEach(products => console.log (
     `${products.name} | $${products.promoPrice}`
 ));
 
+
 let customerType = ["regular", "student", "senior"]
 let customerDiscounts = 0;
 
@@ -55,16 +56,7 @@ if (customerType = "regular") {
     else {
         customerDiscounts = 0}
 
-let totalBeforeDiscounts = 0;
-let totalAfterDiscounts = 0;
-
-let customerCheckOut = [{
-    id: 1, customerType: "regular", 
-    cart: [{name: "shirts", qty: 4}, {name:"TV", qty: 1}]
-}]
-
-
-console.log(`------------ Cusomter Carts ----------------`)
-customerCheckOut.forEach(customerCheckOut => console.log(
-    `id:${customerCheckOut.id} | Customer Type: ${customerCheckOut.customerType} | ${customerCheckOut.cart}`
+console.log(`------------------ Customer Benefits ------------`);
+customerType.forEach(customerType => console.log(
+    `${customerType} | ${customerDiscounts}`
 ));
