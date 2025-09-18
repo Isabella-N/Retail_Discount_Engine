@@ -31,3 +31,16 @@ for (let product of products) {
     let promoPrice = product.price * (product.price* discounts);
     product.promoPrice = promoPrice.toFixed(2)
 }
+
+let customerType = ["regular", "student", "senior"]
+let customerDiscounts = 0;
+
+if (customerType = "regular") {
+    customerDiscounts = 0}
+    else if (customerType = "student") {
+        customerDiscounts = 0.05}
+    else if (customerType = "senior") {
+        customerDiscounts = 0.08}
+    else {
+        customerDiscounts = 0}
+
