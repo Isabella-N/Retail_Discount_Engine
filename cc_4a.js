@@ -42,7 +42,24 @@ console.log(`------------ Promo Price --------------`)
 products.forEach(products => console.log (
     `${products.name} | $${products.promoPrice}`
 ));
+// Everything works from here and above
 
+let customers = [
+    {id: 1, type: "regular", 
+        cart: [{name: "Shirt", quantity: 3}, 
+            {name:"TV", quantity: 1}]},
+    {id: 2, type: "student", 
+        cart: [{name: "Shoes", quantity: 2},
+            {name: "Mugs", quantity: 5},
+            {name: "Plates", quantity: 10}]},
+    {id: 3, type: "senior", 
+        cart: [{name: "TV", quantity: 2},
+            {name: "Mugs", quantity: 10}]}
+]
+
+for (let customer of customers) {
+    console.log(`--- Customer ID_${customer.id} (${customer.type})---`);
+}
 
 let customerType = ["regular", "student", "senior"];
 
@@ -55,7 +72,5 @@ if (customerType === "regular") {
     else {
         customerDiscounts = 0; }
 
-
-console.log(`---------------- Test ---------------`)
-subtotal = 0;
-for (let cusCart of products){}
+// Id, 
+let checkOutCart = [{}]
